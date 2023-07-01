@@ -1,0 +1,100 @@
+
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 0;
+
+    .winnerContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid rgb(37, 37, 37);
+        gap: 20px;
+        border-radius: 10px;
+        justify-content: center;
+
+        span {
+            font-size: 30px;
+        }
+
+        a {
+            background-color: #3b3b3b;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    }
+
+    .infoContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        span {
+            font-size: 200px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    .playerContainer {
+        .score {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 40px;
+
+            .score_player {
+                background-color: #3b3b3b;
+                border-radius: 10px;
+                padding: 10px;
+                color: #fff;
+            }
+
+            .score_bot {
+                padding: 10px;
+            }
+        }
+
+        .controlsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            
+    
+            .takeButton {
+                width: 100%;
+                padding: 12px;
+                border-radius: 10px;
+                border: none;
+                background-color: rgba(255, 172, 63, 0.849);
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .innerContainer {
+        padding: 0;
+        
+        .infoContainer {
+            span {
+                font-size: 150px;
+            }
+        }
+    }
+}
