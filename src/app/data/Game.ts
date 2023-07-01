@@ -13,7 +13,7 @@ export default class Game {
     firstMove: string,
     maxNumMatchesPerMove: number
   ) {
-    this.matches = 2 * numMatches + 1;
+    this.matches = numMatches;
     this.playerTurn = firstMove === "player" ? true : false;
     this.botStarts = firstMove === "player" ? false : true;
     this.maxNumMatchesPerMove = maxNumMatchesPerMove;
