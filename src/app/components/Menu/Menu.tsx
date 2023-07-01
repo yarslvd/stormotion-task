@@ -52,7 +52,7 @@ export const Menu: React.FC = () => {
           </select>
         </div>
         <div className={styles.numMatches}>
-          <label htmlFor="numMatches">Number of matches in the pile - n:</label>
+          <label htmlFor="numMatches">Number of matches in the pile:</label>
           <input
             type="number"
             id="numMatches"
@@ -62,7 +62,7 @@ export const Menu: React.FC = () => {
         </div>
         <div className={styles.numMatchesPerMove}>
           <label htmlFor="maxNumMatchesPerMove">
-            Max number of matches per move - m:
+            Max number of matches per move:
           </label>
           <input
             type="number"
