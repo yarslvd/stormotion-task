@@ -14,7 +14,6 @@ const Game = () => {
   const [botScore, setBotScore] = useState<number>(0);
   const [isGameOver, setIsGameOver] = useState<boolean>(false);
 
-  //Button
   const [inputValue, setInputValue] = useState<number>(1);
 
   const {

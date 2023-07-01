@@ -58,9 +58,9 @@ export default class Game {
     }
   }
 
-  //TODO: improve algorithm to take num of matches
   private botTurn(): void {
     let optimalStrategy: number;
+
     if(this.matches > this.maxNumMatchesPerMove * 2) {
       optimalStrategy = this.maxNumMatchesPerMove;
     }

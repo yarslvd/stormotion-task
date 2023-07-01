@@ -17,12 +17,16 @@ export const Menu: React.FC = () => {
   const [error, setError] = useState('')
 
   const handleStart = () => {
-    if(maxNumMatchesPerMove <= numMatches) {
-      setError('');
-      setStartGame(true);
+    console.log(numMatches, maxNumMatchesPerMove)
+    if(numMatches % 2 === 0) {
+      setError('Number of matches in pile have to be odd');
+    }
+    else if(Math.floor(numMatches / 2) < maxNumMatchesPerMove) {
+      setError('Number max matches per move should be less than half of all matches');
     }
     else {
-      setError('m must be equal or less to m');
+      setError('');
+      setStartGame(true);
     }
   }
 
